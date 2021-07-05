@@ -1,29 +1,29 @@
-##  Вложенные массивы: Крестики-нолики и снова Таблица
+## Nested Arrays: Tic-tac-toe and a Table again
 
-Массивы являются полезными объектами для хранения коллекций данных: списка чисел, строк и тд. Это довольно простые объекты, и их гибкость приводит к неограниченным возможностям их использования. В этом задании рассматривается тема *Вложенные массивы*. Массивы, элементами которых являются массивы. Другими словами, массивы массивов.
+Arrays are useful structures for storing collections of data: lists of numbers, strings, etc. They are fairly simple and their flexibility leads to unlimited possibilities for their use. This assignment deals with *Nested Arrays*. Arrays whose elements are arrays. In other words, arrays of arrays.
 
-### Release 0. Создание поля для игры “Крестики – нолики”
+### Release 0. Creating a field for a game Tic-tac-toe.
 
 ```javascript
 generateTicTacToe()
-//  => [["X", "O", "X"], ["O", "O", "X"], ["X", "X", "O"]]
+// => [["X", "O", "X"], ["O", "O", "X"], ["X", "X", "O"]
 generateTicTacToe()
-//  => [["O", "O", "X"], ["X", "X", "O"], ["O", "O", "X"]]
+// => [["O", "O", "X"], ["X", "X", "O"], ["O", "O", "X"]]
 ```
-*Рисунок 1*. Генерирование tic-tac-toe.
+*Figure 1*. Generating tic-tac-toe.
 
-Тебе нужно написать метод `generateTicTacToe`, который возвращает вложенный массив, представляющий доску для игры в «Крестики – Нолики». Доска должна быть заполнена X (крестиками) и 0 (ноликами). Ты можешь решить, насколько реалистичной будет доска (например, четыре X буквы и пять 0 (то есть ноликов не может быть на 2 больше чем крестиков), только один победитель и т.д.). Единственное правило состоит в том, что доска должна быть полностью заполнена знаками Х и О.
+You need to write a method `generateTicTacToe` that returns a nested array representing a tic-tac-toe board. The board must be filled with X (crosses) and 0 (zeros). You can decide how realistic the board will be (e.g. four X letters and five 0s (i.e. there can't be 2 more zeros than crosses), only one winner, etc.). The only rule is that the board must be completely filled with X's and O's.
 
-- Доска имеет три ряда.
-- Каждая строка имеет три столбца.
-- Доска содержит только X и O – и никаких других элементов.
+- The board has three rows.
+- Each row has three columns.
+- The board contains only X's and O's - and no other items.
 
 
-### Release 1. Преобразование вложенного массива табличных данных 
+### Release 1. Converting tabular data to a nested array 
 
-```javascript
+```javascript.
 let tableData = [
-  ["firstName", "lastName", "city", "state"],
+  ["firstName", "lastName", "city", "state"]
   ["Elisabeth", "Gardenar", "Toledo", "OH"],
   ["Jamaal", "Du", "Sylvania", "OH"],
   ["Kathlyn", "Lavoie", "Maumee", "OH"]
@@ -31,15 +31,15 @@ let tableData = [
 
 convertTable(tableData)
 => [
- { "firstName" : "Elisabeth", "lastName" : "Gardenar", "city" : "Toledo", "state" : "OH" },
- { "firstName" : "Jamaal", "lastName" : "Du", "city" : "Sylvania", "state" : "OH" },
+ { "firstName" : "Elisabeth", "lastName" : "Gardenar", "city" : "Toledo", "state" : "OH" }
+ { "firstName" : "Jamaal", "lastName" : "Du", "city" : "Sylvania", "state" : "OH" }
  { "firstName" : "Kathlyn", "lastName" : "Lavoie", "city" : "Maumee", "state" : "OH" }
 ]
 ```
-*Рисунок 2*. Преобразование данных таблицы в массив обьектов.
+*Figure 2*. Converting table data into an array of objects.
 
-В этом релизе ты преобразуешь вложенный массив в массив обьектов. Другими словами, ты преобразуешь массив, состоящий из массивов, в массив, состоящий из объектов. Давай напишем метод `convertTable` (см. Рисунок 2).
+In this release, you're supposed to convert a nested array into an array of objects. In other words, you have to convert an array consisting of arrays into an array consisting of objects. Let's write the `convertTable` method (see Figure 2).
 
-## Выводы
+## Conclusion.
 
-В этой задаче ты научился(ась) работать с массивами. Прежде чем двигаться дальше, следует удостовериться, что ты ответил(а) на все вопросы, возникшие по ходу разбора этого задания.
+In this task you have learned how to work with arrays. Before we move on, make sure that you have answered all the questions that have arisen in this task.
